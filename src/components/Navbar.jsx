@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 export const Navbar = () => (
     <nav className="navbar navbar-dark bg-primary navbar-expand-lg">
         <div className="navbar-brand">
-            Github Поиск
+            Github Поиск и не только
         </div>
         <ul className="navbar-nav">
             <li className="nav-item">
@@ -12,6 +12,15 @@ export const Navbar = () => (
             </li>
             <li className="nav-item">
                 <NavLink to="/about" className="nav-link">Информация</NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink to="/animation" className="nav-link">Анимация</NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink to="/hoc" className="nav-link">HOC</NavLink>
+            </li>
+            <li className="nav-item">
+                <NavLink to="/test" className="nav-link">Тест</NavLink>
             </li>
         </ul>
     </nav>

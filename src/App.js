@@ -7,6 +7,9 @@ import {Profile} from "./pages/Profile";
 import {Alert} from "./components/Alert";
 import {AlertState} from "./context/alert/alertState";
 import {GithubState} from "./context/github/githubState";
+import Animation from "./pages/Animation";
+import {Hoc} from "./pages/Hoc";
+import Test from "./pages/Test";
 
 function App() {
     return (
@@ -20,6 +23,9 @@ function App() {
                             <Route path="/" exact component={Home}/>
                             <Route path="/about" component={About}/>
                             <Route path="/profile/:name" component={Profile}/>
+                            <Route path="/animation" component={Animation}/>
+                            <Route path="/hoc" component={Hoc}/>
+                            <Route path="/test" component={Test}/>
                         </Switch>
                     </div>
                 </BrowserRouter>
